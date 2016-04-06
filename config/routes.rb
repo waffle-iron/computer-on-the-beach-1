@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'contatos#index'
+
   resources :cidades
   resources :contatos
   # The priority is based upon order of creation: first created -> highest priority.
