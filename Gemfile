@@ -42,3 +42,5 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-generators', '~> 3.3.4'
