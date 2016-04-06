@@ -23,4 +23,9 @@
   <dt>Bairro:</dt>
   <dd><%= @contato.bairro %></dd>
 
+  <% if @contato.cidade.present? %>
+    <dt>Cidade:</dt>
+    <dd><%= @contato.cidade.nome %></dd>
+  <% end %>
+
 </dl>
