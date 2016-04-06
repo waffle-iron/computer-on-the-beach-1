@@ -12,6 +12,7 @@
       <tr>
             <th>Nome</th>
             <th>Telefone</th>
+            <th>Endereço</th>
             <th></th>
         <th></th>
         <th></th>
@@ -22,6 +23,7 @@
       <%= content_tag_for(:tr, @contatos) do |contato| %>
             <td><%= contato.nome %></td>
             <td><%= contato.telefone %></td>
+            <td><%= contato.endereco %></td>
             <td><%= link_to 'Show', contato %></td>
         <td><%= link_to 'Edit', edit_contato_path(contato) %></td>
         <td><%= link_to 'Destroy', contato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
