@@ -1,0 +1,20 @@
+<div class="page-header">
+  <%= link_to cidades_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_cidade_path(@cidade), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show cidade</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Nome:</dt>
+  <dd><%= @cidade.nome %></dd>
+
+  <dt>Uf:</dt>
+  <dd><%= @cidade.uf %></dd>
+
+</dl>
